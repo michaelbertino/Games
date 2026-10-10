@@ -1,0 +1,65 @@
+{
+  "_resourceType": "sprite",
+  "id": "8d0b46d6-359f-45cc-bb2e-256e529c0449",
+  "name": "harvest_token",
+  "symbol": "sprite_harvest_token",
+  "states": [
+    {
+      "id": "13761f75-b927-4e1f-834c-d0a87ddf52c7",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "cb19c378-fe74-4fba-bcba-00171ed90f59",
+          "frames": [
+            {
+              "id": "e8b27a6e-e8e6-4afb-96d3-b6c4c2ee8ba8",
+              "tiles": [
+                {
+                  "id": "66803a88-6eb8-4f48-9871-4070322d6ed5",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "a64d4e5d-dea4-4de3-a45a-a95ae35081b2",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "harvest_token.png",
+  "width": 16,
+  "height": 16
+}

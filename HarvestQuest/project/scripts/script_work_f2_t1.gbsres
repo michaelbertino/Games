@@ -1,0 +1,2284 @@
+{
+  "_resourceType": "script",
+  "id": "dee25fdc-e1df-4eff-b486-c7cae09d3f70",
+  "name": "Work Field 2 Tree 1",
+  "symbol": "script_work_f2_t1",
+  "description": "Harvest this tree or row and advance the field stage.",
+  "variables": {},
+  "actors": {
+    "92d78c53-dce8-4a11-9ca9-71da8d432459": {
+      "id": "92d78c53-dce8-4a11-9ca9-71da8d432459",
+      "name": "Tree or reward"
+    },
+    "5c228520-78da-4350-80e3-94df7b8d3a86": {
+      "id": "5c228520-78da-4350-80e3-94df7b8d3a86",
+      "name": "Tree or reward"
+    },
+    "ddab7d7c-c72c-4c75-a246-537213313f3e": {
+      "id": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+      "name": "Tree or reward"
+    },
+    "abddf46e-6d5b-46b6-a4b5-b8fb5e234fdf": {
+      "id": "abddf46e-6d5b-46b6-a4b5-b8fb5e234fdf",
+      "name": "Tree or reward"
+    }
+  },
+  "script": [
+    {
+      "id": "c780633c-d037-44a6-9cc8-03d92b13697f",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "11"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "8f047391-9adb-40f0-9cdc-d2b63c8fcb76",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "2"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "dfcba34c-1bbe-4cac-a94b-90226dfdf2d2",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "39"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "6c44e42b-9d29-4401-9cc1-b3449922de9a",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "39",
+                          "value": {
+                            "type": "number",
+                            "value": 3
+                          }
+                        }
+                      },
+                      {
+                        "id": "fddcdae7-d30d-4b5a-9f44-1da5ed26aee1",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 3
+                          }
+                        }
+                      },
+                      {
+                        "id": "3b8ea752-418f-4e90-b4ef-41cc9c1328b3",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "21"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "7a000e30-c18b-428e-9912-a448e2a818ad",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "40"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "68add6f1-ccbd-4287-af44-bfcdcd51255c",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "40",
+                          "value": {
+                            "type": "number",
+                            "value": 3
+                          }
+                        }
+                      },
+                      {
+                        "id": "e59a2be5-b049-4068-8071-e83c1dc86b48",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "abddf46e-6d5b-46b6-a4b5-b8fb5e234fdf",
+                          "frame": {
+                            "type": "number",
+                            "value": 3
+                          }
+                        }
+                      },
+                      {
+                        "id": "d44b1b78-d5ce-42f1-a9ce-dafc60c04fc3",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "21"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "24ccd182-2da6-4308-897e-12b504b2a596",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "41"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "076f6d6b-cf99-491d-a5f0-18090f0fcc55",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "41",
+                          "value": {
+                            "type": "number",
+                            "value": 3
+                          }
+                        }
+                      },
+                      {
+                        "id": "6600bbe4-efe4-4106-8989-d01036e8f68a",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "92d78c53-dce8-4a11-9ca9-71da8d432459",
+                          "frame": {
+                            "type": "number",
+                            "value": 3
+                          }
+                        }
+                      },
+                      {
+                        "id": "8ad191b2-c331-47d9-8e01-cbaa7294ee44",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "21"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "c3b70328-7af1-486b-8257-99cae1322427",
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "units": "frames",
+                    "frames": {
+                      "type": "number",
+                      "value": 6
+                    }
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "29f9bc27-1168-4a63-bc6d-0f04cf39b1b7",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "39"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "69a5cda4-d59a-4e4f-9b80-de729d8ca921",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        }
+                      },
+                      {
+                        "id": "e03e3650-34b1-4fa8-a686-63620d8ef0c6",
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "units": "frames",
+                          "frames": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        }
+                      },
+                      {
+                        "id": "1e4afcfe-cb2d-4146-9598-74662ef73680",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        }
+                      },
+                      {
+                        "id": "1816f7ef-f2a5-4395-a251-0f05a5e497fd",
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "units": "frames",
+                          "frames": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        }
+                      },
+                      {
+                        "id": "80768925-7336-4cc8-a08f-9fe8a4121c92",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        }
+                      },
+                      {
+                        "id": "36912428-c3e1-4118-87b3-671dbcf3f406",
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "units": "frames",
+                          "frames": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        }
+                      },
+                      {
+                        "id": "58ea3aed-f8f1-4d36-884d-a8185bc8f49b",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "39",
+                          "value": {
+                            "type": "number",
+                            "value": 3
+                          }
+                        }
+                      },
+                      {
+                        "id": "54f09551-e65f-45ac-9e20-78afaa52012a",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 3
+                          }
+                        }
+                      },
+                      {
+                        "id": "9ca09992-6c5b-45ba-bad3-27ee70a477da",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "21"
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "aebef18a-5b20-4d06-9185-9d6c60dd7a63",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "This tree is ready.\nFinish the other\ntrees in this field.",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "dd8d9464-9879-4eaa-b652-3b0c80d543e6",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "21"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 9
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "899c1362-8cd9-4cb0-8fd5-1233d6563b9f",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "21",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                {
+                  "id": "670342eb-d8ba-469e-8f86-b7b0c0bd2608",
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "11"
+                  }
+                },
+                {
+                  "id": "88f8a827-d113-4de8-81be-0bb8f50c398f",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "11"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "9cd23c71-72b9-4b52-a673-f5cc3d668773",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "All trees shaken!\nNow SWEEP the\nfallen almonds.",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      },
+                      {
+                        "id": "1e36c931-a190-4a26-8586-cdf09bea68e6",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Harvest: $00$ / 3\nSWEEP Swept:$21$/9",
+                          "closeWhen": "notModal",
+                          "showFrame": false,
+                          "minHeight": 3,
+                          "maxHeight": 3,
+                          "textHeight": 2,
+                          "textX": 1,
+                          "textY": 0,
+                          "speedIn": 0,
+                          "speedOut": 0,
+                          "position": "bottom"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "4abf7501-f966-4932-8593-33e28960e61f",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "11"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "ef4ff7ce-e2af-4620-b61b-0550d188d5c8",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Windrows ready!\nNow PICK UP the\nalmonds.",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      },
+                      {
+                        "id": "5a88edc5-4cc1-4183-8ac8-dc8a5c9512e5",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Harvest: $00$ / 3\nPICKUP Bags:$21$/9",
+                          "closeWhen": "notModal",
+                          "showFrame": false,
+                          "minHeight": 3,
+                          "maxHeight": 3,
+                          "textHeight": 2,
+                          "textX": 1,
+                          "textY": 0,
+                          "speedIn": 0,
+                          "speedOut": 0,
+                          "position": "bottom"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "f9150fae-b286-4e63-a092-4aa49e3c439d",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "11"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 3
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "44fa9f37-c3eb-48f2-83ed-a52da9d06b53",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "0"
+                        }
+                      },
+                      {
+                        "id": "52b136a9-717b-4bd2-832b-7d9d9a88861b",
+                        "command": "EVENT_ACTOR_SHOW",
+                        "args": {
+                          "actorId": "5c228520-78da-4350-80e3-94df7b8d3a86"
+                        }
+                      },
+                      {
+                        "id": "ff488ea1-6617-411d-817d-9910300e2aa4",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "FIELD HARVESTED!\n+1 Harvest Token\nHarvest: $00$ / 3",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      },
+                      {
+                        "id": "fa7a9a5b-8354-4aca-b0c4-56a67e83ea52",
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "0"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 1
+                            }
+                          }
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "id": "45aba6b7-f3e1-47a1-92b3-3f185d6b75e8",
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": "The BARN is open!\nGo inside for your\ntractor upgrade.",
+                                "speedIn": 0,
+                                "speedOut": 0
+                              }
+                            }
+                          ],
+                          "false": []
+                        }
+                      },
+                      {
+                        "id": "78b1ac86-c820-4060-bb72-2566fcb64d50",
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "0"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 3
+                            }
+                          }
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "id": "d7fdf803-d62c-4bbb-8f01-b77beb6151bd",
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": "Harvest complete!\nThe crop is ready.\nEnter packing shed!",
+                                "speedIn": 0,
+                                "speedOut": 0
+                              }
+                            }
+                          ],
+                          "false": []
+                        }
+                      },
+                      {
+                        "id": "54cb7e86-ba01-435c-b15f-181cbb753456",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Harvest: $00$ / 3\nShaken:9/9 DONE",
+                          "closeWhen": "notModal",
+                          "showFrame": false,
+                          "minHeight": 3,
+                          "maxHeight": 3,
+                          "textHeight": 2,
+                          "textX": 1,
+                          "textY": 0,
+                          "speedIn": 0,
+                          "speedOut": 0,
+                          "position": "bottom"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "ab37ce26-0508-46c7-9f6f-c86e3ad5aa16",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "4930f8a2-e561-4b56-965a-287db0bdeff6",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Harvest: $00$ / 3\nSHAKE Shaken:$21$/9",
+                    "closeWhen": "notModal",
+                    "showFrame": false,
+                    "minHeight": 3,
+                    "maxHeight": 3,
+                    "textHeight": 2,
+                    "textX": 1,
+                    "textY": 0,
+                    "position": "bottom",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "03c82e63-9521-48e2-915a-6bd3dc8e2509",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "23fedb39-7014-4c94-8f3a-9d5d69f5b4fc",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Harvest: $00$ / 3\nSWEEP Swept:$21$/9",
+                    "closeWhen": "notModal",
+                    "showFrame": false,
+                    "minHeight": 3,
+                    "maxHeight": 3,
+                    "textHeight": 2,
+                    "textX": 1,
+                    "textY": 0,
+                    "position": "bottom",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "a4ec98d3-e0b3-4268-a88f-8d65563cb550",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "0174ba33-0d08-43fa-ad62-bb3e9af105e5",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Harvest: $00$ / 3\nPICKUP Bags:$21$/9",
+                    "closeWhen": "notModal",
+                    "showFrame": false,
+                    "minHeight": 3,
+                    "maxHeight": 3,
+                    "textHeight": 2,
+                    "textX": 1,
+                    "textY": 0,
+                    "position": "bottom",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "2fe90af7-a616-464e-80c5-42b4251c3f7f",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 3
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "0cd4eef5-7d50-4bca-bf1e-31c6001a7f2b",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Harvest: $00$ / 3\nShaken:9/9 DONE",
+                    "closeWhen": "notModal",
+                    "showFrame": false,
+                    "minHeight": 3,
+                    "maxHeight": 3,
+                    "textHeight": 2,
+                    "textX": 1,
+                    "textY": 0,
+                    "position": "bottom",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ],
+              "false": []
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "f6328ce9-0621-4a51-a3be-1665cccde322",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "11"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "fb97f648-a76a-4252-b0cc-c6004154500b",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "2"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "dea2fb51-92be-47f4-8d72-aa29ea066a11",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "39"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "339cdde7-9009-4b99-a109-f0c8233f0bd0",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "39",
+                          "value": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        }
+                      },
+                      {
+                        "id": "ceb653c6-a54c-46e7-a9c6-099034058306",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        }
+                      },
+                      {
+                        "id": "c8a96807-a57c-404b-a133-4459957adaff",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "21"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "b8c5d38a-2939-48ee-a3cb-f77c8c33374e",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "40"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "27903052-3245-4058-8248-85a8abfce42c",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "40",
+                          "value": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        }
+                      },
+                      {
+                        "id": "e72ecccb-8b95-4288-bcf1-f8127b38a9ad",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "abddf46e-6d5b-46b6-a4b5-b8fb5e234fdf",
+                          "frame": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        }
+                      },
+                      {
+                        "id": "ee69ab4e-02c8-49fa-9733-9a1355d384be",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "21"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "7df7bb2a-bd0a-43cb-9660-2ff10b4f5d5f",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "41"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "7e03abe7-9fdd-4a34-bb69-f342114d2687",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "41",
+                          "value": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        }
+                      },
+                      {
+                        "id": "8e1c9cb9-39be-4468-ad53-b06cc83b3882",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "92d78c53-dce8-4a11-9ca9-71da8d432459",
+                          "frame": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        }
+                      },
+                      {
+                        "id": "e5d97e5a-60e9-49db-8cb4-1785754d2335",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "21"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "88617b7f-283d-4fee-8ea0-e37363ac0cf9",
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "units": "frames",
+                    "frames": {
+                      "type": "number",
+                      "value": 6
+                    }
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "dfd4fdef-e213-44fb-a5ad-e1d5d91da1ac",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "39"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "812f6fb6-9a6e-4449-8c34-ba0c99cee138",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "7d2953e7-a7f1-4262-a1ca-0e7d5164f894",
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "units": "frames",
+                          "frames": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        }
+                      },
+                      {
+                        "id": "dcbf6a95-a319-49c6-a3fb-68d7be5d1dca",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "587a1d22-a49d-45c3-a783-b359c8252a9c",
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "units": "frames",
+                          "frames": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        }
+                      },
+                      {
+                        "id": "c5f10d53-5962-4a48-9350-86dca5f9b056",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "65a1953d-9e50-40e0-a4e5-ac783272cf07",
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "units": "frames",
+                          "frames": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        }
+                      },
+                      {
+                        "id": "2f251daf-e076-4c8a-8876-65b720d15437",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "39",
+                          "value": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        }
+                      },
+                      {
+                        "id": "a9fe9bf7-e595-4c5d-89da-70a41b17903c",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        }
+                      },
+                      {
+                        "id": "cbbf0e9e-7809-4c7e-a43b-e5db6dc7f001",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "21"
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "f764d3cb-570c-4ace-9d20-f9cca94225ac",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "This tree is ready.\nFinish the other\ntrees in this field.",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "e1d20a33-8cfb-4654-92a4-991b8420ba4a",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "21"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 9
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "e0e46e29-3e0f-47af-b429-c2cfa4815e1e",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "21",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                {
+                  "id": "a1c67fd8-7a9c-4e15-a342-e5b641b2b432",
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "11"
+                  }
+                },
+                {
+                  "id": "5f464ea1-114d-4fa4-8f57-a16d631818aa",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "11"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "2424dc9a-3152-4c1e-993a-ca44da098a99",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "All trees shaken!\nNow SWEEP the\nfallen almonds.",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      },
+                      {
+                        "id": "3574475d-9382-4cb3-aa9a-89075a24c829",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Harvest: $00$ / 3\nSWEEP Swept:$21$/9",
+                          "closeWhen": "notModal",
+                          "showFrame": false,
+                          "minHeight": 3,
+                          "maxHeight": 3,
+                          "textHeight": 2,
+                          "textX": 1,
+                          "textY": 0,
+                          "speedIn": 0,
+                          "speedOut": 0,
+                          "position": "bottom"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "03dc1437-a3b5-44e5-8362-97d3e34f36b3",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "11"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "4c26bab0-0fbc-4c62-90e0-90c59610cd41",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Windrows ready!\nNow PICK UP the\nalmonds.",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      },
+                      {
+                        "id": "d754300d-15b4-4af8-ba75-b7452764e7ef",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Harvest: $00$ / 3\nPICKUP Bags:$21$/9",
+                          "closeWhen": "notModal",
+                          "showFrame": false,
+                          "minHeight": 3,
+                          "maxHeight": 3,
+                          "textHeight": 2,
+                          "textX": 1,
+                          "textY": 0,
+                          "speedIn": 0,
+                          "speedOut": 0,
+                          "position": "bottom"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "fde7e1a2-b949-41db-b947-19308bd4ddd8",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "11"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 3
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "65d110f1-d38c-4952-a216-f0beede663b6",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "0"
+                        }
+                      },
+                      {
+                        "id": "f4bd0748-1286-4e2f-8de3-e75db4ca3317",
+                        "command": "EVENT_ACTOR_SHOW",
+                        "args": {
+                          "actorId": "5c228520-78da-4350-80e3-94df7b8d3a86"
+                        }
+                      },
+                      {
+                        "id": "a874f758-b665-4066-9509-8b104359ebff",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "FIELD HARVESTED!\n+1 Harvest Token\nHarvest: $00$ / 3",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      },
+                      {
+                        "id": "77cac632-ca8c-4701-b38a-2c0bfeee7ce0",
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "0"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 1
+                            }
+                          }
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "id": "95518722-19f6-47c5-b968-8556dc418c0e",
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": "The BARN is open!\nGo inside for your\ntractor upgrade.",
+                                "speedIn": 0,
+                                "speedOut": 0
+                              }
+                            }
+                          ],
+                          "false": []
+                        }
+                      },
+                      {
+                        "id": "9683608b-6128-4425-9dc8-ce5bc550b048",
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "0"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 3
+                            }
+                          }
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "id": "7165f152-6422-4537-8f12-ca280c4ca08e",
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": "Harvest complete!\nThe crop is ready.\nEnter packing shed!",
+                                "speedIn": 0,
+                                "speedOut": 0
+                              }
+                            }
+                          ],
+                          "false": []
+                        }
+                      },
+                      {
+                        "id": "e866484d-2dc1-4fa4-a6dd-45a1c8fc26bc",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Harvest: $00$ / 3\nShaken:9/9 DONE",
+                          "closeWhen": "notModal",
+                          "showFrame": false,
+                          "minHeight": 3,
+                          "maxHeight": 3,
+                          "textHeight": 2,
+                          "textX": 1,
+                          "textY": 0,
+                          "speedIn": 0,
+                          "speedOut": 0,
+                          "position": "bottom"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "9a37a3c0-2e14-4ec2-a2e1-e7cb62c9f5e9",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "82155b13-698b-41a3-87a1-e90510d2887d",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Harvest: $00$ / 3\nSHAKE Shaken:$21$/9",
+                    "closeWhen": "notModal",
+                    "showFrame": false,
+                    "minHeight": 3,
+                    "maxHeight": 3,
+                    "textHeight": 2,
+                    "textX": 1,
+                    "textY": 0,
+                    "position": "bottom",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "e2f67e85-b57a-471a-ba4b-46ea3c5558d6",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "e24426c8-c726-47fc-9c60-40678b118636",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Harvest: $00$ / 3\nSWEEP Swept:$21$/9",
+                    "closeWhen": "notModal",
+                    "showFrame": false,
+                    "minHeight": 3,
+                    "maxHeight": 3,
+                    "textHeight": 2,
+                    "textX": 1,
+                    "textY": 0,
+                    "position": "bottom",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "e688edee-44f3-4cd5-bd18-c9264059ec38",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "446c7e7c-a3ef-4ab2-8c8c-3a539ead3060",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Harvest: $00$ / 3\nPICKUP Bags:$21$/9",
+                    "closeWhen": "notModal",
+                    "showFrame": false,
+                    "minHeight": 3,
+                    "maxHeight": 3,
+                    "textHeight": 2,
+                    "textX": 1,
+                    "textY": 0,
+                    "position": "bottom",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "c2befeaf-fcc2-4dc6-8d65-fdf7151b43b2",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 3
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "56236a1d-aefd-4459-bdd2-1437058ec719",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Harvest: $00$ / 3\nShaken:9/9 DONE",
+                    "closeWhen": "notModal",
+                    "showFrame": false,
+                    "minHeight": 3,
+                    "maxHeight": 3,
+                    "textHeight": 2,
+                    "textX": 1,
+                    "textY": 0,
+                    "position": "bottom",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ],
+              "false": []
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "10ed6e24-1285-4732-9522-d221a8d2d1b0",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "11"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "38068839-ae5b-4954-90fd-86bc269cadc8",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "2"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "0b2b6303-56b6-4c8f-bc95-3277bf70c402",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "39"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "0caf49f6-464b-46a5-b989-f81a82e8f97a",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "39",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "cbb3d9f3-9946-49d0-9d6d-96c4f2234c40",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "da2b82cf-3f45-4564-ac84-6362e3a4976c",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "21"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "e8b3aebf-68fc-497d-b328-bdb1b1608f58",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "40"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "9866a45e-1b82-4ffd-9db2-6d4088d359bf",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "40",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "43d12b8f-baba-4f4b-94ac-b59e36e4adc1",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "abddf46e-6d5b-46b6-a4b5-b8fb5e234fdf",
+                          "frame": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "36110893-b25c-422e-93f4-16c1fcc28f6b",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "21"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "c49ad62f-5deb-4bc4-8757-9373b1dadfb1",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "41"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "e81b68c2-8e49-495a-8bd5-6a4c0ba3dcd1",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "41",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "e101e47f-8b8d-403d-b2b0-ab9d81fb4b2d",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "92d78c53-dce8-4a11-9ca9-71da8d432459",
+                          "frame": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "661ecf75-987b-4bcb-9e0b-06282f1f8aa6",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "21"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "5432c336-8879-4b1b-a255-c1705267b154",
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "units": "frames",
+                    "frames": {
+                      "type": "number",
+                      "value": 6
+                    }
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "b1d72d36-9846-48f6-a49a-1d71f34a1100",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "39"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "710404d9-e535-457c-85f9-0f11908b313b",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        }
+                      },
+                      {
+                        "id": "e2e79bf6-4a7d-4983-8c2f-84fe2794e76d",
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "units": "frames",
+                          "frames": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        }
+                      },
+                      {
+                        "id": "f2694d5d-dd01-462a-b041-7ca16aa2507d",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        }
+                      },
+                      {
+                        "id": "d719075e-9122-441a-9ff0-c63df1fb9be0",
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "units": "frames",
+                          "frames": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        }
+                      },
+                      {
+                        "id": "cc324bf6-4f9c-47a7-ab35-5e0e1b703039",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        }
+                      },
+                      {
+                        "id": "e891d603-8bcf-4d33-8b86-28d7fc0c18c2",
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "units": "frames",
+                          "frames": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        }
+                      },
+                      {
+                        "id": "e97d91c3-71f6-4940-a59e-f59642f09dbd",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "39",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "c74103f8-7334-4bef-bd43-5632333e0122",
+                        "command": "EVENT_ACTOR_SET_FRAME",
+                        "args": {
+                          "actorId": "ddab7d7c-c72c-4c75-a246-537213313f3e",
+                          "frame": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "e49602b5-9a8d-45cf-ad81-900bd6d86655",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "21"
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "6173cf63-5614-4bd1-a6fd-9108793882a2",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "This tree is ready.\nFinish the other\ntrees in this field.",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "7c4fe5f4-69f0-402c-9370-bf7d38720d16",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "21"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 9
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "30c37544-3056-49f3-a0a2-77b5ff6cb35c",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "21",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                {
+                  "id": "44a558b4-c174-4c6e-b866-0d478fb15e7a",
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "11"
+                  }
+                },
+                {
+                  "id": "e3475604-9e1c-42c2-8d0e-b604b5e3aada",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "11"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "825ce461-09eb-49b6-901b-53d683208c9c",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "All trees shaken!\nNow SWEEP the\nfallen almonds.",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      },
+                      {
+                        "id": "8ff4ce1e-a966-4c80-a257-197dacf6a9fc",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Harvest: $00$ / 3\nSWEEP Swept:$21$/9",
+                          "closeWhen": "notModal",
+                          "showFrame": false,
+                          "minHeight": 3,
+                          "maxHeight": 3,
+                          "textHeight": 2,
+                          "textX": 1,
+                          "textY": 0,
+                          "speedIn": 0,
+                          "speedOut": 0,
+                          "position": "bottom"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "631e729c-3793-47d1-97ee-088e3cf282aa",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "11"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "4b0ed7e7-cbae-4b4e-8ce3-4d0f1fad3e35",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Windrows ready!\nNow PICK UP the\nalmonds.",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      },
+                      {
+                        "id": "74355b42-8a7f-4b86-9ab0-7e2ac804778f",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Harvest: $00$ / 3\nPICKUP Bags:$21$/9",
+                          "closeWhen": "notModal",
+                          "showFrame": false,
+                          "minHeight": 3,
+                          "maxHeight": 3,
+                          "textHeight": 2,
+                          "textX": 1,
+                          "textY": 0,
+                          "speedIn": 0,
+                          "speedOut": 0,
+                          "position": "bottom"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                },
+                {
+                  "id": "8b2a378c-6e84-4131-ac61-b09625ffe83e",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "11"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 3
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "50dc95ad-7e8e-473d-a17e-c7428fda56c7",
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "0"
+                        }
+                      },
+                      {
+                        "id": "a639d3b5-92bd-4c25-ab40-ce2444bd493b",
+                        "command": "EVENT_ACTOR_SHOW",
+                        "args": {
+                          "actorId": "5c228520-78da-4350-80e3-94df7b8d3a86"
+                        }
+                      },
+                      {
+                        "id": "09f30192-2a86-4204-bd2e-42b16463da94",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "FIELD HARVESTED!\n+1 Harvest Token\nHarvest: $00$ / 3",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      },
+                      {
+                        "id": "a9a10a72-7757-4150-ba3e-47f17887a185",
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "0"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 1
+                            }
+                          }
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "id": "6852a2be-ee62-488c-aa29-056bae0d2503",
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": "The BARN is open!\nGo inside for your\ntractor upgrade.",
+                                "speedIn": 0,
+                                "speedOut": 0
+                              }
+                            }
+                          ],
+                          "false": []
+                        }
+                      },
+                      {
+                        "id": "64248793-b420-46f2-9059-a3067175bf40",
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "0"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 3
+                            }
+                          }
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "id": "f4de0749-fdb2-4018-a067-db274b822d00",
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": "Harvest complete!\nThe crop is ready.\nEnter packing shed!",
+                                "speedIn": 0,
+                                "speedOut": 0
+                              }
+                            }
+                          ],
+                          "false": []
+                        }
+                      },
+                      {
+                        "id": "8c7eae44-44e8-43b5-b518-5aafb3c05749",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "Harvest: $00$ / 3\nShaken:9/9 DONE",
+                          "closeWhen": "notModal",
+                          "showFrame": false,
+                          "minHeight": 3,
+                          "maxHeight": 3,
+                          "textHeight": 2,
+                          "textX": 1,
+                          "textY": 0,
+                          "speedIn": 0,
+                          "speedOut": 0,
+                          "position": "bottom"
+                        }
+                      }
+                    ],
+                    "false": []
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "772ef6f1-89f2-46f8-abbd-9cc85c00b095",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "27eb6034-cc8b-477c-b78b-5ae1631a46d2",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Harvest: $00$ / 3\nSHAKE Shaken:$21$/9",
+                    "closeWhen": "notModal",
+                    "showFrame": false,
+                    "minHeight": 3,
+                    "maxHeight": 3,
+                    "textHeight": 2,
+                    "textX": 1,
+                    "textY": 0,
+                    "position": "bottom",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "909553f4-2421-4dae-bff0-6b3b97b67b9a",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "9309f168-b11a-452e-8f92-c5e649efd574",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Harvest: $00$ / 3\nSWEEP Swept:$21$/9",
+                    "closeWhen": "notModal",
+                    "showFrame": false,
+                    "minHeight": 3,
+                    "maxHeight": 3,
+                    "textHeight": 2,
+                    "textX": 1,
+                    "textY": 0,
+                    "position": "bottom",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "a50c1d9d-2f27-4390-82ac-2e131358a80a",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "45f58e14-b1fe-47ae-838c-0994ce1e4ae4",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Harvest: $00$ / 3\nPICKUP Bags:$21$/9",
+                    "closeWhen": "notModal",
+                    "showFrame": false,
+                    "minHeight": 3,
+                    "maxHeight": 3,
+                    "textHeight": 2,
+                    "textX": 1,
+                    "textY": 0,
+                    "position": "bottom",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "7f7454b3-da03-4f43-b6d4-c8e1dc797d82",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 3
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "1ae0f292-5d2a-48bf-b3f9-55ed4661a789",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "Harvest: $00$ / 3\nShaken:9/9 DONE",
+                    "closeWhen": "notModal",
+                    "showFrame": false,
+                    "minHeight": 3,
+                    "maxHeight": 3,
+                    "textHeight": 2,
+                    "textX": 1,
+                    "textY": 0,
+                    "position": "bottom",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ],
+              "false": []
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ]
+}

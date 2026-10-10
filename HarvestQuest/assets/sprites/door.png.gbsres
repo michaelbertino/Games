@@ -1,0 +1,96 @@
+{
+  "_resourceType": "sprite",
+  "id": "136bd844-e1c2-48e3-bda0-0c425b301e34",
+  "name": "door",
+  "symbol": "sprite_door",
+  "states": [
+    {
+      "id": "4dfc0c79-c5f1-46df-83a5-8fc15bc71053",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "c03c9be0-4bb7-4cba-9166-63b623a766e9",
+          "frames": [
+            {
+              "id": "f85f58cf-34d4-41e0-9256-368f41f020ec",
+              "tiles": [
+                {
+                  "id": "6a36fdbc-5fae-464c-ac8a-0bf0351fbdaf",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "ea335c71-754f-4fab-a7ac-01b5ec290e0f",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            },
+            {
+              "id": "79d0cdb8-c875-4b97-a833-db2f46d3ac23",
+              "tiles": [
+                {
+                  "id": "573f60ba-2aee-4663-9613-e84fdc07d8fd",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 16,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "a467b83b-1658-435d-b54b-ab2d82737fb4",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 24,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 4,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "door.png",
+  "width": 32,
+  "height": 16
+}

@@ -1,0 +1,22 @@
+diff --git a/crates/chromatic-backup-core/src/lib.rs b/crates/chromatic-backup-core/src/lib.rs
+index e35b2c9..9abe0d2 100644
+--- a/crates/chromatic-backup-core/src/lib.rs
++++ b/crates/chromatic-backup-core/src/lib.rs
+@@ -299,6 +299,17 @@ pub fn discover_ports() -> Result<Vec<String>, BackupError> {
+         })
+         .collect::<Vec<_>>();
+     matches.sort();
++    // macOS exposes call-in and call-out aliases for the same USB device.
++    // Prefer the call-out endpoint, retaining tty when no paired cu exists.
++    #[cfg(target_os = "macos")]
++    {
++        let names = matches.clone();
++        matches.retain(|name| {
++            name.strip_prefix("/dev/tty.").is_none_or(|suffix| {
++                !names.contains(&format!("/dev/cu.{suffix}"))
++            })
++        });
++    }
+     Ok(matches)
+ }
+ 

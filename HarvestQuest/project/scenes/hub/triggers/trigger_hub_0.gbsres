@@ -1,0 +1,31 @@
+{
+  "_resourceType": "trigger",
+  "id": "ee958214-a167-4f10-9629-39d2b1ed7450",
+  "_index": 0,
+  "name": "Enter Field 1",
+  "symbol": "trigger_hub_0",
+  "x": 3,
+  "y": 5,
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "id": "938b261d-0b61-4a87-a013-d31b2cf503c1",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "94cec56c-eade-468f-870a-ea5df763f634",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        },
+        "direction": "up",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d6524b0a-9041-4a16-b487-1466df8e74ac",
+  "name": "large_field_2",
+  "symbol": "bg_large_field_2",
+  "filename": "large_field_2.png",
+  "width": 48,
+  "height": 18,
+  "imageWidth": 384,
+  "imageHeight": 144,
+  "autoColor": false,
+  "tileColors": ""
+}

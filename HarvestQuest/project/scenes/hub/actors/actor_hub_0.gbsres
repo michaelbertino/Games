@@ -1,0 +1,109 @@
+{
+  "_resourceType": "actor",
+  "id": "9900e7f3-7dde-46ca-80f6-dd7c66e34c63",
+  "_index": 0,
+  "name": "Barn Door",
+  "symbol": "actor_hub_0",
+  "x": 4,
+  "y": 13,
+  "spriteSheetId": "136bd844-e1c2-48e3-bda0-0c425b301e34",
+  "paletteId": "default-sprite",
+  "frame": 0,
+  "direction": "down",
+  "animate": false,
+  "isPinned": false,
+  "persistent": false,
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "collisionGroup": "",
+  "script": [
+    {
+      "id": "9c338fc9-4569-4cd0-bfdd-e0464f7e0fd7",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "daf022a4-a94f-4f6c-b4b8-eddd7258f0cd",
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "1d774ade-26f5-4487-b867-892473baecbf",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "68ea6b64-38a4-414c-bd85-a8fa12709341",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "BARN LOCKED\nHarvest one field\nto unlock it.",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "71aba5a6-fb73-45cc-9188-c93c635185f6",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "587af9bf-582d-4f29-9ae1-ee6264e65910",
+            "command": "EVENT_ACTOR_SET_FRAME",
+            "args": {
+              "actorId": "$self$",
+              "frame": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

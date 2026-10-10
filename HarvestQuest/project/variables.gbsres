@@ -1,0 +1,191 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Harvest Tokens",
+      "symbol": "var_0"
+    },
+    {
+      "id": "1",
+      "name": "Tractor Unlocked",
+      "symbol": "var_1"
+    },
+    {
+      "id": "2",
+      "name": "Driving Tractor",
+      "symbol": "var_2"
+    },
+    {
+      "id": "10",
+      "name": "Field 1 Stage",
+      "symbol": "var_10"
+    },
+    {
+      "id": "20",
+      "name": "Field 1 Action Count",
+      "symbol": "var_20"
+    },
+    {
+      "id": "30",
+      "name": "Field 1 Tree 1",
+      "symbol": "var_30"
+    },
+    {
+      "id": "31",
+      "name": "Field 1 Tree 2",
+      "symbol": "var_31"
+    },
+    {
+      "id": "32",
+      "name": "Field 1 Tree 3",
+      "symbol": "var_32"
+    },
+    {
+      "id": "33",
+      "name": "Field 1 Tree 4",
+      "symbol": "var_33"
+    },
+    {
+      "id": "34",
+      "name": "Field 1 Tree 5",
+      "symbol": "var_34"
+    },
+    {
+      "id": "35",
+      "name": "Field 1 Tree 6",
+      "symbol": "var_35"
+    },
+    {
+      "id": "36",
+      "name": "Field 1 Tree 7",
+      "symbol": "var_36"
+    },
+    {
+      "id": "37",
+      "name": "Field 1 Tree 8",
+      "symbol": "var_37"
+    },
+    {
+      "id": "38",
+      "name": "Field 1 Tree 9",
+      "symbol": "var_38"
+    },
+    {
+      "id": "11",
+      "name": "Field 2 Stage",
+      "symbol": "var_11"
+    },
+    {
+      "id": "21",
+      "name": "Field 2 Action Count",
+      "symbol": "var_21"
+    },
+    {
+      "id": "39",
+      "name": "Field 2 Tree 1",
+      "symbol": "var_39"
+    },
+    {
+      "id": "40",
+      "name": "Field 2 Tree 2",
+      "symbol": "var_40"
+    },
+    {
+      "id": "41",
+      "name": "Field 2 Tree 3",
+      "symbol": "var_41"
+    },
+    {
+      "id": "42",
+      "name": "Field 2 Tree 4",
+      "symbol": "var_42"
+    },
+    {
+      "id": "43",
+      "name": "Field 2 Tree 5",
+      "symbol": "var_43"
+    },
+    {
+      "id": "44",
+      "name": "Field 2 Tree 6",
+      "symbol": "var_44"
+    },
+    {
+      "id": "45",
+      "name": "Field 2 Tree 7",
+      "symbol": "var_45"
+    },
+    {
+      "id": "46",
+      "name": "Field 2 Tree 8",
+      "symbol": "var_46"
+    },
+    {
+      "id": "47",
+      "name": "Field 2 Tree 9",
+      "symbol": "var_47"
+    },
+    {
+      "id": "12",
+      "name": "Field 3 Stage",
+      "symbol": "var_12"
+    },
+    {
+      "id": "22",
+      "name": "Field 3 Action Count",
+      "symbol": "var_22"
+    },
+    {
+      "id": "48",
+      "name": "Field 3 Tree 1",
+      "symbol": "var_48"
+    },
+    {
+      "id": "49",
+      "name": "Field 3 Tree 2",
+      "symbol": "var_49"
+    },
+    {
+      "id": "50",
+      "name": "Field 3 Tree 3",
+      "symbol": "var_50"
+    },
+    {
+      "id": "51",
+      "name": "Field 3 Tree 4",
+      "symbol": "var_51"
+    },
+    {
+      "id": "52",
+      "name": "Field 3 Tree 5",
+      "symbol": "var_52"
+    },
+    {
+      "id": "53",
+      "name": "Field 3 Tree 6",
+      "symbol": "var_53"
+    },
+    {
+      "id": "54",
+      "name": "Field 3 Tree 7",
+      "symbol": "var_54"
+    },
+    {
+      "id": "55",
+      "name": "Field 3 Tree 8",
+      "symbol": "var_55"
+    },
+    {
+      "id": "56",
+      "name": "Field 3 Tree 9",
+      "symbol": "var_56"
+    },
+    {
+      "id": "3",
+      "name": "Action Performed",
+      "symbol": "var_3"
+    }
+  ],
+  "constants": []
+}

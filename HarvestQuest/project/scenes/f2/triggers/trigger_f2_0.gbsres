@@ -1,0 +1,31 @@
+{
+  "_resourceType": "trigger",
+  "id": "4c51a511-b4e6-4fc1-b7a3-325277b4f4ea",
+  "_index": 0,
+  "name": "Return to farmyard",
+  "symbol": "trigger_f2_0",
+  "x": 8,
+  "y": 15,
+  "width": 4,
+  "height": 2,
+  "script": [
+    {
+      "id": "6a60189b-42fe-4306-9ad8-1db0c2d4f38e",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "25f85df2-99e2-4f77-b392-58c4b98d0adf",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "leaveScript": []
+}

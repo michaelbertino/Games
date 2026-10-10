@@ -1,0 +1,177 @@
+{
+  "_resourceType": "actor",
+  "id": "8ecd78f7-35fa-46f9-b380-b3c329006a3b",
+  "_index": 8,
+  "name": "Almond Tree 9",
+  "symbol": "actor_f2_8",
+  "x": 15,
+  "y": 12,
+  "spriteSheetId": "8b3610ca-5387-4b14-ad74-b5911a63facf",
+  "paletteId": "default-sprite",
+  "frame": 0,
+  "direction": "down",
+  "animate": false,
+  "isPinned": false,
+  "persistent": false,
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "collisionGroup": "",
+  "script": [
+    {
+      "id": "f56d0c8a-2dd5-47ce-aabf-4a313e8d4576",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "415fba1f-5802-404d-bfc6-d4179b1216ad",
+        "$actor[49e88fac-5827-4e7c-ba5e-531deee44e10]$": "49e88fac-5827-4e7c-ba5e-531deee44e10",
+        "$actor[662c5475-2993-4f49-84ad-1eae34ee6b90]$": "662c5475-2993-4f49-84ad-1eae34ee6b90",
+        "$actor[8ecd78f7-35fa-46f9-b380-b3c329006a3b]$": "8ecd78f7-35fa-46f9-b380-b3c329006a3b",
+        "$actor[5c228520-78da-4350-80e3-94df7b8d3a86]$": "5c228520-78da-4350-80e3-94df7b8d3a86"
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "3e9eb361-7afd-426f-b3c5-e94ac84a668a",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "47"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "dc37140c-a381-4400-9863-7a6c3a02e324",
+            "command": "EVENT_ACTOR_SET_FRAME",
+            "args": {
+              "actorId": "$self$",
+              "frame": {
+                "type": "number",
+                "value": 0
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "995feb8f-16e8-4791-9a53-cfe5acadac70",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "47"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "67123b51-84c5-4c5a-8a1e-b9d04fc73e7b",
+            "command": "EVENT_ACTOR_SET_FRAME",
+            "args": {
+              "actorId": "$self$",
+              "frame": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "5ad878c0-78e8-4db8-a293-06c274bf5efb",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "47"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d8db115c-7218-4747-8720-de9a9977b019",
+            "command": "EVENT_ACTOR_SET_FRAME",
+            "args": {
+              "actorId": "$self$",
+              "frame": {
+                "type": "number",
+                "value": 2
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "915a1480-de41-430b-8bb2-b4135028ade4",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "47"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "63ff04fb-3333-4da2-81f8-8aac5cf2a212",
+            "command": "EVENT_ACTOR_SET_FRAME",
+            "args": {
+              "actorId": "$self$",
+              "frame": {
+                "type": "number",
+                "value": 3
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "031fa985-3276-40c9-8351-43e0bc968459",
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      }
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

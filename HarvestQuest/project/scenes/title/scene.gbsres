@@ -1,0 +1,503 @@
+{
+  "_resourceType": "scene",
+  "id": "fba76fc9-877c-4b02-bd20-e3971928ebb6",
+  "_index": 0,
+  "type": "TOPDOWN",
+  "name": "Harvest Quest",
+  "symbol": "scene_title",
+  "x": 0,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "ef9c17c5-0baf-4062-a45e-ae28eaaeeb49",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "273a4dd4-aa8f-4a35-9bca-0da648df4427",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "5e0d1951-1a09-4eba-a87d-99f70b425a96",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "48cc1c53-f934-4904-b73d-236c0612aa83",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "7d35e095-783f-4673-935b-ceea552ab636",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "cfd8935d-48ca-453f-bd9f-282a146e464d",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "10",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "8351b626-bc62-4e76-8c53-1d62dbf0141d",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "20",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "48566db0-1d91-4ab7-905e-725c0fa933ed",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "30",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "f26ad0d1-3d40-4f5b-bb08-0e2fb0313198",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "31",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "e29d66e2-c6a0-46f4-a2ef-831414b93497",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "32",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "1c38e3be-2f84-4984-8a3f-402c3cb8fb15",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "33",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "92abacc1-39aa-4edf-b9e7-4b716dd5fe0b",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "34",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "b2deab3c-8e71-4460-b018-df377c43711e",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "35",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "436c4118-c77f-4fd8-82e0-dc0571b1e371",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "36",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "e2ba32a7-16f2-4e9a-93f2-3483a9fc0d18",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "37",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "1d28b771-6769-4893-848e-cc0d006ed337",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "38",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "554e973b-376f-42ec-b724-348d166c67e2",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "11",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "2f19d31e-b677-4065-b874-6ee3193d0710",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "21",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "0640dba9-aaeb-42ae-b291-300bfc2d3c7b",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "39",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "15e0731c-8231-4721-b41a-9816fee9ce74",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "40",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "6bd43f5b-c99e-4ff8-8e6f-6e2c031eca92",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "41",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "f148904b-95db-4525-bfff-4203b1494ddc",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "42",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "010cc2d2-660c-49f0-9a3e-749a08f3cf6c",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "43",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "14455273-9636-4b4a-a9c1-db8f7481a076",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "44",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "2df541ec-8d0f-494d-87a4-1c795b36de0e",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "45",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "c6d114b7-3731-460a-be3e-829a91dd7f24",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "46",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "2f95984c-c266-4bdb-8701-f4055603cead",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "47",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "a9d8c10c-9235-477d-be01-ebcc0722e625",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "12",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "f2034412-be69-490d-bc0c-d4ececd6a1f4",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "22",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "afa50815-b4bc-413f-b5c7-3a870eb720c7",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "48",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "edb71f02-905d-4de4-9abc-93fe96f379fe",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "c1dfda17-0857-4fe3-9467-48c09bb319de",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "50",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "bcc7d69b-3241-4a7f-83fc-2be5816faf5b",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "51",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "7c26b3e9-6c48-4b2b-b06e-c583e312fd68",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "52",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "1fd7375f-638a-4f26-97dc-7fab1476ca6d",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "53",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "e5cec69e-351a-4608-b1e1-0f44817f3ac2",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "54",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "03c47139-e730-44ba-b993-029477bd7df2",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "55",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "9c9e890e-be16-42b7-8f33-009f9de17c39",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "56",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "c88ac4d0-a8ae-4753-be2c-a3e9088a0280",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "b5893764-b38e-49a5-826f-dce8da168770",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "A: SHAKE trees\nThen SWEEP almonds\nThen PICK UP rows",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "5c14b29b-9dee-412d-b8ee-9df7968620da",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "Collect 3 Harvest\nTokens. Barn at 1!\nDeliver at the shed.",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "54db3055-1fdc-4715-a19f-68908ab4277d",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "D-Pad: Move\nA: Harvest / enter\nB: Tractor toggle",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "a659c085-06e6-4a60-9f86-52d9ca6833dc",
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "25f85df2-99e2-4f77-b392-58c4b98d0adf",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

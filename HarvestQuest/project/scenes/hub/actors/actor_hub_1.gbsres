@@ -1,0 +1,109 @@
+{
+  "_resourceType": "actor",
+  "id": "9a1c1a69-27b5-4922-b232-22dffabea5f8",
+  "_index": 1,
+  "name": "Packing Shed Door",
+  "symbol": "actor_hub_1",
+  "x": 15,
+  "y": 13,
+  "spriteSheetId": "136bd844-e1c2-48e3-bda0-0c425b301e34",
+  "paletteId": "default-sprite",
+  "frame": 0,
+  "direction": "down",
+  "animate": false,
+  "isPinned": false,
+  "persistent": false,
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "collisionGroup": "",
+  "script": [
+    {
+      "id": "461d704b-1af3-4016-84d2-fc28d91b1964",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "43b71163-cc86-4bb3-a204-12ce4a6ec857",
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "04daca2a-6cfd-4f38-b31f-116a1b03fdff",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "21fb269a-e79e-4322-a2fb-00fdc6e087bb",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "PACKING SHED LOCKED\nCollect all three\nHarvest Tokens.",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "0f0fb1f8-9d4a-4f9f-9167-ebbfa4da16f8",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "4c9924d8-d944-40bc-800d-b403635b00d4",
+            "command": "EVENT_ACTOR_SET_FRAME",
+            "args": {
+              "actorId": "$self$",
+              "frame": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

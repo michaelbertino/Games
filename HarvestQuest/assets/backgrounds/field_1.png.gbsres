@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "39e8b1a4-99ea-41e7-8e15-a882a643c34f",
+  "name": "field_1",
+  "symbol": "bg_field_1",
+  "filename": "field_1.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false,
+  "tileColors": ""
+}

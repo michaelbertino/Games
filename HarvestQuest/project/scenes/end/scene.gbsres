@@ -1,0 +1,85 @@
+{
+  "_resourceType": "scene",
+  "id": "04daca2a-6cfd-4f38-b31f-116a1b03fdff",
+  "_index": 6,
+  "type": "TOPDOWN",
+  "name": "Harvest Complete",
+  "symbol": "scene_end",
+  "x": 1440,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "02e8757a-1086-44db-ae1e-b0324eb3c874",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "6054710a-7604-443f-8449-566a4a22c261",
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "26f58346-079c-44c1-ac8c-912a0463be7a",
+      "command": "EVENT_DIALOGUE_CLOSE_NONMODAL",
+      "args": {}
+    },
+    {
+      "id": "c4619135-390d-46e0-85b7-a34dac5a8d08",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "956b76f2-e0a4-475b-bd78-8a873f8f4503",
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "fba76fc9-877c-4b02-bd20-e3971928ebb6",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

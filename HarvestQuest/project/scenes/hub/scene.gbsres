@@ -1,0 +1,289 @@
+{
+  "_resourceType": "scene",
+  "id": "25f85df2-99e2-4f77-b392-58c4b98d0adf",
+  "_index": 1,
+  "type": "TOPDOWN",
+  "name": "Farmyard",
+  "symbol": "scene_hub",
+  "x": 240,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "7d949826-2d51-4b83-8ef3-8d98271b6289",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "501f0c67-30ba-4ab3-888a-a6136e9eba34",
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "6ed3fc07-e51b-485b-9a44-dbca7ea8f311",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "2"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "9f1c6f3b-22c6-4e8a-95e6-d6cd5006aee8",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "728265d2-9784-4ca4-9dec-4a788a7be85c"
+            }
+          },
+          {
+            "id": "f96372d0-1bc9-4908-afc6-439190b4a4fa",
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 2
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "9e223a04-db77-4633-91fb-cc18440eb510",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "5d02d596-8cf9-4594-b171-271fe4260bc1"
+            }
+          },
+          {
+            "id": "5628255f-8cc5-40cf-9720-e58f24bf015d",
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "d8a433eb-1341-4de8-b293-20c3465c503c",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d71b13a3-95b0-4655-a5af-a88f0868192a",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "b14630fb-2979-4583-bab0-382658ee5580",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "2"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "078ba8f1-ad35-400f-b970-9802df95b82d",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "2",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "4ea267de-72fb-48e1-b5a4-87bf360f7ce2",
+                        "command": "EVENT_PLAYER_SET_SPRITE",
+                        "args": {
+                          "spriteSheetId": "728265d2-9784-4ca4-9dec-4a788a7be85c"
+                        }
+                      },
+                      {
+                        "id": "5ebb7606-58b5-41c6-9fd8-52232585b7f0",
+                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                        "args": {
+                          "actorId": "player",
+                          "speed": 2
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "2c6b7092-7c5f-49c9-88a4-4e7821b72afc",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "2",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        }
+                      },
+                      {
+                        "id": "4a724000-f2a8-48bd-b225-50ae82fc97c9",
+                        "command": "EVENT_PLAYER_SET_SPRITE",
+                        "args": {
+                          "spriteSheetId": "5d02d596-8cf9-4594-b171-271fe4260bc1"
+                        }
+                      },
+                      {
+                        "id": "934b6202-5cc7-4011-8e39-a94e10765ea1",
+                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                        "args": {
+                          "actorId": "player",
+                          "speed": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "190585b9-6978-413c-a5bb-d8d5975fcd14",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "The tractor waits\nin the barn. Earn\nyour first token!",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "db1a6bc9-96de-4d16-9067-6d0e04525d7c",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "f40ac820-cc68-4c55-b10d-93d7ed392d4d",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "Harvest: $00$ / 3\n1: Shake all trees\n2: Sweep all rows",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "87a66726-2761-41b0-b433-56c4b400d20c",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "3: Pick up almonds\nBarn opens at 1.\nPacking shed at 3.",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "e36b8b47-6558-4e31-bb08-e7ea93ccccfc",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "Harvest: $00$ / 3\nSTART: progress",
+              "closeWhen": "notModal",
+              "showFrame": false,
+              "minHeight": 3,
+              "maxHeight": 3,
+              "textHeight": 2,
+              "textX": 1,
+              "textY": 0,
+              "speedIn": 0,
+              "speedOut": 0,
+              "position": "bottom"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "e36b8b47-6558-4e31-bb08-e7ea93ccccfc",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Harvest: $00$ / 3\nSTART: progress",
+        "closeWhen": "notModal",
+        "showFrame": false,
+        "minHeight": 3,
+        "maxHeight": 3,
+        "textHeight": 2,
+        "textX": 1,
+        "textY": 0,
+        "speedIn": 0,
+        "speedOut": 0,
+        "position": "bottom"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

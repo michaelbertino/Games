@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+HarvestQuest/artifacts/
+HarvestQuest/save-states/
+HarvestQuest/build/*
+!HarvestQuest/build/HarvestQuest.gbc
+chromagician-mac/*
+!chromagician-mac/*.py
+!chromagician-mac/*.command
+!chromagician-mac/*.md
+!chromagician-mac/patches/

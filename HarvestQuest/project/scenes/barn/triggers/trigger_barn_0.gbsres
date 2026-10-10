@@ -1,0 +1,31 @@
+{
+  "_resourceType": "trigger",
+  "id": "1d8ada6d-fdcf-41f9-a654-ac796f425963",
+  "_index": 0,
+  "name": "Exit Barn",
+  "symbol": "trigger_barn_0",
+  "x": 8,
+  "y": 15,
+  "width": 4,
+  "height": 2,
+  "script": [
+    {
+      "id": "6fd9f446-6b90-42ae-9773-87b73627d0a6",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "25f85df2-99e2-4f77-b392-58c4b98d0adf",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      }
+    }
+  ],
+  "leaveScript": []
+}

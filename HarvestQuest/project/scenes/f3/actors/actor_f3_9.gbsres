@@ -1,0 +1,65 @@
+{
+  "_resourceType": "actor",
+  "id": "018d885a-21be-4da3-88c6-5f4abf6730f4",
+  "_index": 9,
+  "name": "Harvest Token",
+  "symbol": "actor_f3_9",
+  "x": 9,
+  "y": 3,
+  "spriteSheetId": "8d0b46d6-359f-45cc-bb2e-256e529c0449",
+  "paletteId": "default-sprite",
+  "frame": 0,
+  "direction": "down",
+  "animate": false,
+  "isPinned": false,
+  "persistent": false,
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "collisionGroup": "",
+  "script": [
+    {
+      "id": "7c1999ed-4a85-4497-8405-8c6ea262a394",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "A Harvest Token!\nThis field is done.",
+        "speedIn": 0,
+        "speedOut": 0
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "aceb9bd6-7142-4987-8e20-c2a0a784db6f",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "12"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        }
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "id": "7beb2a3c-2449-40ec-890a-d2e2cda379df",
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

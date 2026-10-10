@@ -1,0 +1,113 @@
+{
+  "_resourceType": "actor",
+  "id": "c0f6b3bc-e6a1-45b5-a55c-31f6fae340d7",
+  "_index": 0,
+  "name": "Tractor",
+  "symbol": "actor_barn_0",
+  "x": 9,
+  "y": 8,
+  "spriteSheetId": "728265d2-9784-4ca4-9dec-4a788a7be85c",
+  "paletteId": "default-sprite",
+  "frame": 0,
+  "direction": "down",
+  "animate": false,
+  "isPinned": false,
+  "persistent": false,
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "collisionGroup": "",
+  "script": [
+    {
+      "id": "6b3584d3-866f-4dd9-89f6-e1b361d7eac6",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "266db2c8-ab74-465c-92a3-13495fd4aec9",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "1",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "id": "7d78ecb3-7e18-4f20-a2b3-957b2b29627d",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "2",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "id": "31227ad1-7b1f-4e98-bed5-1cd5a44ba99e",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "728265d2-9784-4ca4-9dec-4a788a7be85c"
+            }
+          },
+          {
+            "id": "6123ed4e-61cc-408b-854f-2ed98138900e",
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 2
+            }
+          },
+          {
+            "id": "ead9ea87-7058-443b-ac0b-a143db5f41b9",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "TRACTOR UNLOCKED!\nTwice the speed!\nHarvest a whole row.",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "cdab4899-d44a-4c27-9d0d-18df556d8c9f",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "A: work three trees\nB: enter / exit\nGo harvest faster!",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "9a27167e-8e43-4117-aa88-b11193951bb9",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "Your tractor is\nready. B toggles\ndriving anywhere.",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

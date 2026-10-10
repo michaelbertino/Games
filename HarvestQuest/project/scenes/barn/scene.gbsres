@@ -1,0 +1,282 @@
+{
+  "_resourceType": "scene",
+  "id": "1d774ade-26f5-4487-b867-892473baecbf",
+  "_index": 5,
+  "type": "TOPDOWN",
+  "name": "Barn - Tractor Upgrade",
+  "symbol": "scene_barn",
+  "x": 1200,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "31790ee1-5d89-49a1-8db7-2ae7e6b71990",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1",
+    "default-bg-1"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "aa8d97d7-2148-4c3a-a2c7-2413ac52c226",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "2"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "402b1c09-96ad-4df2-bcc4-379eefd1dfcc",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "728265d2-9784-4ca4-9dec-4a788a7be85c"
+            }
+          },
+          {
+            "id": "50100628-ecaa-428c-a4cd-27423392a80f",
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 2
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "05a7bbf8-424c-44f1-91de-a06fa6760e77",
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "5d02d596-8cf9-4594-b171-271fe4260bc1"
+            }
+          },
+          {
+            "id": "95b813d1-ed10-4875-b4ef-9879b7da5ac8",
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "24dba832-6682-4052-8389-af1dbef07977",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "e1f57c1b-8f14-42f6-b07a-f7fb86b35771",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "4a1dfe48-45e9-4043-8889-14af4c23cd28",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "2"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "373ac093-ac80-4987-8ace-ab8043c3c252",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "2",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        }
+                      },
+                      {
+                        "id": "faa266ad-3706-40c0-aafa-d6e372fe81c2",
+                        "command": "EVENT_PLAYER_SET_SPRITE",
+                        "args": {
+                          "spriteSheetId": "728265d2-9784-4ca4-9dec-4a788a7be85c"
+                        }
+                      },
+                      {
+                        "id": "b12984a2-aae0-487a-b4e2-e944a1c1ba5c",
+                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                        "args": {
+                          "actorId": "player",
+                          "speed": 2
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "b9203541-435d-41cc-ad90-69ccf48bfb72",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "2",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        }
+                      },
+                      {
+                        "id": "625dae56-e435-4b55-9860-1fbad1d37d1e",
+                        "command": "EVENT_PLAYER_SET_SPRITE",
+                        "args": {
+                          "spriteSheetId": "5d02d596-8cf9-4594-b171-271fe4260bc1"
+                        }
+                      },
+                      {
+                        "id": "f26b994d-7b1d-4b2d-8406-1f15d88fd9a8",
+                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                        "args": {
+                          "actorId": "player",
+                          "speed": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "92a64ee3-c581-419d-82f2-122132efec6f",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "The tractor waits\nin the barn. Earn\nyour first token!",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "44fb7f9f-9b78-4efb-9b7e-113870ccd550",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "c75f1f57-75bb-4eba-af04-60332ce15037",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "Harvest: $00$ / 3\n1: Shake all trees\n2: Sweep all rows",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "bd86eb9b-6af4-4e7e-ab0c-b73e0c0c4e88",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "3: Pick up almonds\nBarn opens at 1.\nPacking shed at 3.",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "0feeef2e-7a59-443a-a0b2-f3fef529d283",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "Harvest: $00$ / 3\nSTART: progress",
+              "closeWhen": "notModal",
+              "showFrame": false,
+              "minHeight": 3,
+              "maxHeight": 3,
+              "textHeight": 2,
+              "textX": 1,
+              "textY": 0,
+              "speedIn": 0,
+              "speedOut": 0,
+              "position": "bottom"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "0feeef2e-7a59-443a-a0b2-f3fef529d283",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Harvest: $00$ / 3\nSTART: progress",
+        "closeWhen": "notModal",
+        "showFrame": false,
+        "minHeight": 3,
+        "maxHeight": 3,
+        "textHeight": 2,
+        "textX": 1,
+        "textY": 0,
+        "speedIn": 0,
+        "speedOut": 0,
+        "position": "bottom"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

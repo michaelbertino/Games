@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "7d949826-2d51-4b83-8ef3-8d98271b6289",
+  "name": "farmyard",
+  "symbol": "bg_farmyard",
+  "filename": "farmyard.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false,
+  "tileColors": ""
+}
